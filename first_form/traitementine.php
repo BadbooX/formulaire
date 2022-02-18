@@ -30,15 +30,15 @@ var_dump();
 
 
 
-var_dump(gettype($diff)); // gettype : renvoie le type d'une variable
-var_dump($diff);
-
-
-
-
-
- die();
+ var_dump(gettype($diff)); // gettype : renvoie le type d'une variable
+ var_dump($diff);
+ 
  $age = $diff->format('%y');
+ 
+
+
+
+ die(); // tue le programme à ce moment précis (ici pratique pour ne pas faire la redirection plus bas)
  
  
  if($age >= 18) {
